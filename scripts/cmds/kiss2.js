@@ -1,11 +1,11 @@
-const axios = require('axios');
+$cmd install o.js const axios = require('axios');
 const jimp = require("jimp");
 const fs = require("fs")
 
 
 module.exports = {
     config: {
-        name: "kiss",
+        name: "o",
         aliases: ["kiss 2 kiss"],
         version: "1.0",
         author: "Mohammad Badol",
@@ -21,10 +21,10 @@ module.exports = {
 
     onStart: async function ({ message, event, args }) {
         const mention = Object.keys(event.mentions);
-        if (mention.length == 0) return message.reply("💚আপমি যাকে কিস দিবেন তাকে মেনশন করুন প্লিজ✅");
+        if (mention.length == 0) return message.reply("💚আপমি যাকে কিস দিবেন তার নাম মেনশন করুন প্লিজ✅");
         else if (mention.length == 1) {
             const one = event.senderID, two = mention[0];
-            bal(one, two).then(ptth => { message.reply({ body: "╔⏤⏤⏤╝❮❮𝐌𝐈𝐌-𝐁𝐎𝐓-𝟎𝟎𝟕❯❯╚⏤⏤⏤╗\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n💋 আমার বস তারেক তোমাকে ummmmmmmh দিলো🤣\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n╔⏤⏤⏤╝❮❮𝐓𝐀𝐑𝐄𝐊 𝐁𝐎𝐓 𝟎𝟎𝟕❯❯╚⏤⏤⏤╗", attachment: fs.createReadStream(ptth) }) })
+            bal(one, two).then(ptth => { message.reply({ body: "╔⏤⏤⏤╝❮❮𝐓𝐀𝐑𝐄𝐊 𝐁𝐎𝐓-𝟎𝟎𝟕❯❯╚⏤⏤⏤╗\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n💋 আমার বস তারেক তোমাকে Ummmmmmmmmmmmh দিলো🤣\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n╔⏤⏤⏤╝❮❮𝐓𝐀𝐑𝐄𝐊 𝐁𝐎𝐓-𝟎𝟎𝟕❯❯╚⏤⏤⏤╗", attachment: fs.createReadStream(ptth) }) })
         } else {
             const one = mention[1], two = mention[0];
             bal(one, two).then(ptth => { message.reply({ body: "he is not me🕸", attachment: fs.createReadStream(ptth) }) })
