@@ -53,7 +53,7 @@ module.exports = {
    
     B4D9LM1M += `\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n╭━─━──━─━≪✠≫━──━─━─━╮\n│\n│🔐𝐓𝐎𝐓𝐀𝐋- 【•${global.GoatBot.commands.size}•】 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒🔐\n│\n│🔐𝐁𝐎𝐓 𝐎𝐖𝐍𝐄𝐑: 𝐓𝐀𝐑𝐄𝐊 𝐒𝐀𝐑𝐊𝐀𝐑📌\n│\n│https://m.me/tarek.20.king\n│\n│m.me/100089702123718\n│\n╰━─━──━─━━──━─━─━❯❯\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n`;
 
-    message.reply({body:B4D9LM1M,attachment: await global.utils.getStreamFromURL("https://i.imgur.com/Ar7ZKi9.jpeg")})
+    message.reply({body:B4D9LM1M,attachment: await global.utils.getStreamFromURL("https://i.imgur.com/IeTL7hI.png")})
   }
 };
 
